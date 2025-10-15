@@ -33,7 +33,7 @@ function Shop() {
     }
     //Create an array of the items in the shop.
     const goods = [
-        {id: 1, name: 'Ndovu flour', price: 165, Image: '/pic/ndovu.jpeg'},
+        {id: 1, name: 'Ndovu flour', price: 165, Image: '/public/pic/ndovu.jpeg'},
         {id: 2, name: 'Exe flour', price: 135, Image: '/pic/exe.jpeg'},
         {id: 3, name: 'Rina oil', price: 210, Image: '/pic/rina.jpeg'},
         {id: 4, name: 'Meningai Saop', price: 170, Image: '/pic/soap.jpeg'},
