@@ -8,7 +8,7 @@ function Top() {
     return(
         <>
              <div>
-                <img src="pica.png" className={styles.topPic} />
+                <img src="/pic/pica.png" className={styles.topPic} />
              </div>
         </>
     );
