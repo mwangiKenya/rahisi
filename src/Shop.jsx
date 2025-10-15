@@ -8,7 +8,7 @@ function Top() {
     return(
         <>
              <div>
-                <img src="/pic/pica.png" className={styles.topPic} />
+                <img src="/pica.png" className={styles.topPic} />
              </div>
         </>
     );
@@ -33,30 +33,30 @@ function Shop() {
     }
     //Create an array of the items in the shop.
     const goods = [
-        {id: 1, name: 'Ndovu flour', price: 165, Image: '/public/pic/ndovu.jpeg'},
-        {id: 2, name: 'Exe flour', price: 135, Image: '/pic/exe.jpeg'},
-        {id: 3, name: 'Rina oil', price: 210, Image: '/pic/rina.jpeg'},
-        {id: 4, name: 'Meningai Saop', price: 170, Image: '/pic/soap.jpeg'},
-        {id: 5, name: 'Salt', price: 80, Image: '/pic/salt.jpeg'},
-        {id: 6, name: 'Sugar', price: 250, Image: '/pic/sugar.jpeg'},
-        {id: 7, name: 'phone', price: 14500, Image: '/pic/phone.webp'},
-        {id: 8, name: 'Laptop', price: 32000, Image: '/pic/laptop.webp'},
-        {id: 9, name: 'Iron', price: 1270, Image: '/pic/iron.jpeg'},
-        {id: 10, name: 'Kettle', price: 800, Image: '/pic/kettle.jpeg'},
-        {id: 11, name: 'Charger', price: 450, Image: '/pic/charger.jpeg'},
-        {id: 12, name: 'Heater', price: 1100, Image: '/pic/heater.jpeg'},
-        {id: 13, name: 'Iron Sheet', price: 950, Image: '/pic/sheet.jpeg'},
-        {id: 14, name: 'Iron nails', price: 170, Image: '/pic/nails.jpeg'},
-        {id: 15, name: 'Harmmer', price: 270, Image: '/pic/harmmer.png'},
-        {id: 16, name: 'Cemment', price: 870, Image: '/pic/cement.jpeg'},
-        {id: 17, name: 'Pipe', price: 165, Image: '/pic/pipe.jpeg'},
-        {id: 18, name: 'Metal rod', price: 230, Image: '/pic/rod.webp'},
-        {id: 19, name: 'Safari shoe', price: 1240, Image: '/pic/shoea.webp'},
-        {id: 20, name: 'Mark shoe', price: 2000, Image: '/pic/shoeb.webp'},
-        {id: 21, name: 'Barter shoe', price: 1780, Image: '/pic/shoec.webp'},
-        {id: 22, name: 'Laert shoe', price: 2200, Image: '/pic/shoed.webp'},
-        {id: 23, name: 'Shert shoe', price: 1450, Image: '/pic/shoee.webp'},
-        {id: 24, name: 'Dedt shoe', price: 3400, Image: '/pic/shoef.webp'},
+        {id: 1, name: 'Ndovu flour', price: 165, Image: '/ndovu.jpeg'},
+        {id: 2, name: 'Exe flour', price: 135, Image: '/exe.jpeg'},
+        {id: 3, name: 'Rina oil', price: 210, Image: '/rina.jpeg'},
+        {id: 4, name: 'Meningai Saop', price: 170, Image: '/soap.jpeg'},
+        {id: 5, name: 'Salt', price: 80, Image: '/salt.jpeg'},
+        {id: 6, name: 'Sugar', price: 250, Image: '/sugar.jpeg'},
+        {id: 7, name: 'phone', price: 14500, Image: '/phone.webp'},
+        {id: 8, name: 'Laptop', price: 32000, Image: '/laptop.webp'},
+        {id: 9, name: 'Iron', price: 1270, Image: '/iron.jpeg'},
+        {id: 10, name: 'Kettle', price: 800, Image: '/kettle.jpeg'},
+        {id: 11, name: 'Charger', price: 450, Image: '/charger.jpeg'},
+        {id: 12, name: 'Heater', price: 1100, Image: '/heater.jpeg'},
+        {id: 13, name: 'Iron Sheet', price: 950, Image: '/sheet.jpeg'},
+        {id: 14, name: 'Iron nails', price: 170, Image: '/nails.jpeg'},
+        {id: 15, name: 'Harmmer', price: 270, Image: '/harmmer.png'},
+        {id: 16, name: 'Cemment', price: 870, Image: '/cement.jpeg'},
+        {id: 17, name: 'Pipe', price: 165, Image: '/pipe.jpeg'},
+        {id: 18, name: 'Metal rod', price: 230, Image: '/rod.webp'},
+        {id: 19, name: 'Safari shoe', price: 1240, Image: '/shoea.webp'},
+        {id: 20, name: 'Mark shoe', price: 2000, Image: '/shoeb.webp'},
+        {id: 21, name: 'Barter shoe', price: 1780, Image: '/shoec.webp'},
+        {id: 22, name: 'Laert shoe', price: 2200, Image: '/shoed.webp'},
+        {id: 23, name: 'Shert shoe', price: 1450, Image: '/shoee.webp'},
+        {id: 24, name: 'Dedt shoe', price: 3400, Image: '/shoef.webp'},
     ]
 
     return(
