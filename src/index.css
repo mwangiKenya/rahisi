@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  margin-top: 98px;
+}
+
+nav {
+  background-color: rgb(9, 192, 9);
+  width: 100%;
+  padding-bottom: 1.5%;
+  padding-top: 1%;
+  text-align: center;
+}
+
+.my-Link {
+  color: white;
+  text-decoration: none;
+  margin-right: 3%;
+  padding: 1.03% 2% 1.4% 2%;
+  transition: 0.4s;
+}
+
+.my-Link:hover {
+  background-color: black;
+  border-bottom: 2px solid blue;
+  color: green;
+}
+
+.header-div {
+  background-color: aquamarine;
+  padding-top: 0.1%;
+  padding-bottom: 0.1%;
+  display: flex;
+  align-items: baseline;
+}
+
+.strong-a {
+  color: yellow;
+}
+
+h1 {
+  text-align: center;
+}
+
+.title-code {
+  margin: auto;
+}
+
+.my-main-div {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 10%;
+  background-color: rgb(187, 186, 186);
+  padding-bottom: 2%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* 📱 Responsive design for all screen sizes */
+@media (max-width: 1024px) {
+  nav {
+    padding: 2% 0;
+  }
+
+  .my-Link {
+    margin-right: 2%;
+    padding: 1% 1.5%;
+    font-size: 0.95rem;
+  }
+
+  footer {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-div {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .my-Link {
+    display: block;
+    margin: 8px 0;
+    padding: 8px 0;
+  }
+
+  body {
+    margin-top: 120px;
+  }
+
+  footer {
+    font-size: 0.9rem;
+    grid-template-columns: 1fr;
+    padding: 20px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+
+  .my-Link {
+    font-size: 0.85rem;
+    padding: 10px 0;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  body {
+    margin-top: 110px;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+}
+body {
+    padding-top: 90px; /* adjust this to your navbar height */
+}
