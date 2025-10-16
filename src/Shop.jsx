@@ -8,7 +8,7 @@ function Top() {
     return(
         <>
              <div>
-                <img src="/pica.png" className={styles.topPic} />
+                <img src={`${import.meta.env.BASE_URL}pica.png`} className={styles.topPic} />
              </div>
         </>
     );
@@ -16,48 +16,50 @@ function Top() {
 
 function Shop() {
     const [cart, setCart] = useState([]);
-    //Additems to cart
+
+    // Add items to cart
     function AddToCart(item) {
-            if (cart.some(cartItem => cartItem.id === item.id)) {
+        if (cart.some(cartItem => cartItem.id === item.id)) {
             // Item already in cart → remove it
             setCart(cart.filter(cartItem => cartItem.id !== item.id));
-            } else {
+        } else {
             // Item not in cart → add it
             setCart([...cart, item]);
-            }
+        }
     }
 
-    //Remove the items from cart on the cart summary
+    // Remove the items from cart on the cart summary
     function RemoveItem(itemId) {
         setCart(cart.filter(cartItem => cartItem.id !== itemId));
     }
-    //Create an array of the items in the shop.
+
+    // Create an array of the items in the shop
     const goods = [
-        {id: 1, name: 'Ndovu flour', price: 165, Image: '/ndovu.jpeg'},
-        {id: 2, name: 'Exe flour', price: 135, Image: '/exe.jpeg'},
-        {id: 3, name: 'Rina oil', price: 210, Image: '/rina.jpeg'},
-        {id: 4, name: 'Meningai Saop', price: 170, Image: '/soap.jpeg'},
-        {id: 5, name: 'Salt', price: 80, Image: '/salt.jpeg'},
-        {id: 6, name: 'Sugar', price: 250, Image: '/sugar.jpeg'},
-        {id: 7, name: 'phone', price: 14500, Image: '/phone.webp'},
-        {id: 8, name: 'Laptop', price: 32000, Image: '/laptop.webp'},
-        {id: 9, name: 'Iron', price: 1270, Image: '/iron.jpeg'},
-        {id: 10, name: 'Kettle', price: 800, Image: '/kettle.jpeg'},
-        {id: 11, name: 'Charger', price: 450, Image: '/charger.jpeg'},
-        {id: 12, name: 'Heater', price: 1100, Image: '/heater.jpeg'},
-        {id: 13, name: 'Iron Sheet', price: 950, Image: '/sheet.jpeg'},
-        {id: 14, name: 'Iron nails', price: 170, Image: '/nails.jpeg'},
-        {id: 15, name: 'Harmmer', price: 270, Image: '/harmmer.png'},
-        {id: 16, name: 'Cemment', price: 870, Image: '/cement.jpeg'},
-        {id: 17, name: 'Pipe', price: 165, Image: '/pipe.jpeg'},
-        {id: 18, name: 'Metal rod', price: 230, Image: '/rod.webp'},
-        {id: 19, name: 'Safari shoe', price: 1240, Image: '/shoea.webp'},
-        {id: 20, name: 'Mark shoe', price: 2000, Image: '/shoeb.webp'},
-        {id: 21, name: 'Barter shoe', price: 1780, Image: '/shoec.webp'},
-        {id: 22, name: 'Laert shoe', price: 2200, Image: '/shoed.webp'},
-        {id: 23, name: 'Shert shoe', price: 1450, Image: '/shoee.webp'},
-        {id: 24, name: 'Dedt shoe', price: 3400, Image: '/shoef.webp'},
-    ]
+        {id: 1, name: 'Ndovu flour', price: 165, Image: `${import.meta.env.BASE_URL}ndovu.jpeg`},
+        {id: 2, name: 'Exe flour', price: 135, Image: `${import.meta.env.BASE_URL}exe.jpeg`},
+        {id: 3, name: 'Rina oil', price: 210, Image: `${import.meta.env.BASE_URL}rina.jpeg`},
+        {id: 4, name: 'Meningai Saop', price: 170, Image: `${import.meta.env.BASE_URL}soap.jpeg`},
+        {id: 5, name: 'Salt', price: 80, Image: `${import.meta.env.BASE_URL}salt.jpeg`},
+        {id: 6, name: 'Sugar', price: 250, Image: `${import.meta.env.BASE_URL}sugar.jpeg`},
+        {id: 7, name: 'phone', price: 14500, Image: `${import.meta.env.BASE_URL}phone.webp`},
+        {id: 8, name: 'Laptop', price: 32000, Image: `${import.meta.env.BASE_URL}laptop.webp`},
+        {id: 9, name: 'Iron', price: 1270, Image: `${import.meta.env.BASE_URL}iron.jpeg`},
+        {id: 10, name: 'Kettle', price: 800, Image: `${import.meta.env.BASE_URL}kettle.jpeg`},
+        {id: 11, name: 'Charger', price: 450, Image: `${import.meta.env.BASE_URL}charger.jpeg`},
+        {id: 12, name: 'Heater', price: 1100, Image: `${import.meta.env.BASE_URL}heater.jpeg`},
+        {id: 13, name: 'Iron Sheet', price: 950, Image: `${import.meta.env.BASE_URL}sheet.jpeg`},
+        {id: 14, name: 'Iron nails', price: 170, Image: `${import.meta.env.BASE_URL}nails.jpeg`},
+        {id: 15, name: 'Harmmer', price: 270, Image: `${import.meta.env.BASE_URL}harmmer.png`},
+        {id: 16, name: 'Cemment', price: 870, Image: `${import.meta.env.BASE_URL}cement.jpeg`},
+        {id: 17, name: 'Pipe', price: 165, Image: `${import.meta.env.BASE_URL}pipe.jpeg`},
+        {id: 18, name: 'Metal rod', price: 230, Image: `${import.meta.env.BASE_URL}rod.webp`},
+        {id: 19, name: 'Safari shoe', price: 1240, Image: `${import.meta.env.BASE_URL}shoea.webp`},
+        {id: 20, name: 'Mark shoe', price: 2000, Image: `${import.meta.env.BASE_URL}shoeb.webp`},
+        {id: 21, name: 'Barter shoe', price: 1780, Image: `${import.meta.env.BASE_URL}shoec.webp`},
+        {id: 22, name: 'Laert shoe', price: 2200, Image: `${import.meta.env.BASE_URL}shoed.webp`},
+        {id: 23, name: 'Shert shoe', price: 1450, Image: `${import.meta.env.BASE_URL}shoee.webp`},
+        {id: 24, name: 'Dedt shoe', price: 3400, Image: `${import.meta.env.BASE_URL}shoef.webp`},
+    ];
 
     return(
         <>
@@ -66,7 +68,7 @@ function Shop() {
            <div>
               <ul className={styles.MyList}>
                     {goods.map((item) => {
-                        const isInCart = cart.some((cartItem) => cartItem.id === item.id); // ✅ define this here
+                        const isInCart = cart.some((cartItem) => cartItem.id === item.id);
 
                         return (
                         <li key={item.id} className={styles.ListItemOne}>
@@ -84,11 +86,11 @@ function Shop() {
                             </div>
                         </li>
                         );
-          })}
-        </ul>
+                    })}
+              </ul>
            </div>
 
-           {/*Display the cart summary*/ }
+           {/*Display the cart summary*/}
            { cart.length > 0 && (
             <div>
                 <h3> Your cart items </h3>
